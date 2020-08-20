@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="shortcut icon" href="C:\Users\Anjali Mittal\Desktop\website\I.png"/>
+	<title>Google</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul id="nav_bar">
+					<li class="nav-links" id="gmail"><a href="https://www.gmail.com" >Gmail</a></li>
+					<li class="nav-links" ><a href="https://www.google.com/search?q=images&rlz=1C1CHBF_enIN808IN811&oq=images&aqs=chrome..69i57j0l5.2912j0j7&sourceid=chrome&ie=UTF-8" >Images</a></li>
+					<li id="sign_in"><a href="https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail" >Sign in</a></li>
+					
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="google" >
+			<a  id="google_logo"><img src="C:\Users\Anjali Mittal\Desktop\website\glogo.png" alt="GOOGLE">
+		</div>
+		
+		<div class="form">
+			<form id="frmsearch" method="get" />
+				<input type="text" id ="textsearch" placeholder="search">
+				<div class="buttons">
+				<input type="submit"  value="Google search" id="google search">
+			    <input type="submit" value="I'm feeling lucky" id="I'm feeling lucky">
+		 			
+		        </div>
+			</form>
+		</div>
+
+		
+		
+
+		<script type="text/javascript">
+			document.getElementById('frmsearch').onsubmit=function(){
+				window.location='http://www.google.com/search?q=' + document.getElementById('textsearch').value;
+				return false;
+			}
+		</script>
+		
+		<footer>
+			<ul class="footer-left">
+				<li><a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+				<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+				<li><a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+				<li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+			</ul>
+			<ul class="footer-right">
+			<li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+				<li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+				<li><a href="">Settings</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
